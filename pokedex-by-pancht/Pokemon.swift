@@ -54,7 +54,7 @@ class Pokemon {
         return _attack
     }
     
-    var nextEvolutionTxt {
+    var nextEvolutionTxt: String {
         return _nextEvolutionTxt
     }
     
