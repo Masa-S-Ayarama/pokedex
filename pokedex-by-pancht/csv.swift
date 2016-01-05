@@ -33,7 +33,7 @@ public class CSV {
         } catch _ {
             csvString = nil
         };
-        try self.init(content: csvString,delimiter:comma, encoding:NSUTF8StringEncoding)
+        try self.init(content: csvString, delimiter:comma, encoding:NSUTF8StringEncoding)
     }
     
     

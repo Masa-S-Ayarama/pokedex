@@ -67,7 +67,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 pokemon.append(poke)
             }
             
-            print(rows)
+            //print(rows)
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -148,6 +148,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //let lower = searchBar.text!.lowercaseString
             // '$0' - grabs the element's name in the array??
             //filteredPokemon = pokemon.filter({ $0.name.rangeOfString(lower) != nil })
+            //let capStr = searchText.capitalizedString
+            
             filteredPokemon = pokemon.filter({ $0.name.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil, locale: nil) != nil })
             collection.reloadData()
         }
